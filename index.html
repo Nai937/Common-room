@@ -1,394 +1,198 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="สนามแบดมินตันหลังสวน - จองสนามออนไลน์ ดูตารางว่าง บริการเช่าไม้ เช่ารองเท้า ขึ้นเอ็น" />
-  <meta name="keywords" content="สนามแบดมินตัน, หลังสวน, จองสนาม, badminton, Langsuan" />
-  <meta property="og:title" content="สนามแบดมินตันหลังสวน" />
-  <meta property="og:description" content="สนามแบดมินตันคุณภาพ 4 คอร์ท ให้บริการทุกวัน จ.-ส. 15:00-23:00 น." />
-  <title>สนามแบดมินตันหลังสวน | Langsuan Badminton Hall</title>
-  <link rel="icon" type="image/png" href="./images/logo.png" />
-  <link rel="apple-touch-icon" href="./images/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Common Room — ห้องประชุมพร้อมใช้งาน เปิด 08:00–20:00 ทุกวัน ราคา 100 บาท/ชั่วโมง"/>
+  <meta property="og:title" content="Common Room — ตารางจองห้อง"/>
+  <meta property="og:description" content="ตรวจสอบตารางว่างและจองห้อง Common Room ออนไลน์"/>
+  <title>Common Room | ตารางจองห้อง</title>
+  <link rel="icon" type="image/png" href="./images/logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
 
-  <!-- ===== FIXED HEADER ===== -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
+<!-- ===== HEADER ===== -->
+<header class="cr-header">
+  <div class="cr-header-inner">
+    <a href="#" class="cr-brand">
+      <div class="cr-logo-wrap">
+        <img src="./images/logo.png" alt="logo" class="cr-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="cr-logo-fallback" style="display:none">CR</div>
+      </div>
+      <div class="cr-brand-text">
+        <span class="cr-brand-main">Common Room</span>
+        <span class="cr-brand-sub">ห้องประชุม &amp; ห้องอเนกประสงค์</span>
+      </div>
+    </a>
+    <div class="cr-header-clock">
+      <div class="cr-clock-time" id="cr-clock-time">00:00:00</div>
+      <div class="cr-clock-date" id="cr-clock-date"></div>
+    </div>
+  </div>
+</header>
 
-      <a href="#" class="header-brand">
-        <img
-          src="./images/logo.png"
-          alt="โลโก้สนามแบดมินตันหลังสวน"
-          class="header-logo"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        />
-        <div class="header-logo-fallback" style="display:none;">LBH</div>
-        <div class="header-titles">
-          <span class="header-title-th">สนามแบดมินตันหลังสวน</span>
-          <span class="header-title-en">Langsuan Badminton Hall</span>
+<!-- ===== HERO ===== -->
+<section class="cr-hero">
+  <div class="cr-hero-bg" aria-hidden="true">
+    <div class="cr-hero-orb cr-hero-orb1"></div>
+    <div class="cr-hero-orb cr-hero-orb2"></div>
+    <div class="cr-hero-orb cr-hero-orb3"></div>
+    <svg class="cr-hero-grid" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+      <defs><pattern id="hgrid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      </pattern></defs>
+      <rect width="800" height="400" fill="url(#hgrid)"/>
+    </svg>
+  </div>
+  <div class="cr-hero-content">
+    <div class="cr-hero-badge">🏢 ห้องพร้อมใช้งาน</div>
+    <h1 class="cr-hero-title">Common Room</h1>
+    <p class="cr-hero-sub">ห้องประชุมคุณภาพ — ราคาเหมาะสม เปิดบริการทุกวัน</p>
+    <div class="cr-hero-pills">
+      <div class="cr-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>08:00 – 20:00 น.</span>
+      </div>
+      <div class="cr-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        <span>เปิดทุกวัน</span>
+      </div>
+      <div class="cr-pill cr-pill-accent">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <span>100 บาท / ชั่วโมง</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCHEDULE ===== -->
+<section class="cr-section" id="schedule">
+  <div class="cr-section-inner">
+    <div class="cr-section-header">
+      <h2 class="cr-section-title">
+        <span class="cr-section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </span>
+        ตารางการจองสัปดาห์นี้
+      </h2>
+      <p class="cr-section-sub">ตรวจสอบช่องว่างก่อนติดต่อจอง</p>
+    </div>
+
+    <!-- Week nav -->
+    <div class="cr-week-nav">
+      <button class="cr-nav-btn" onclick="changeWeek(-1)">&#8249; สัปดาห์ก่อน</button>
+      <button class="cr-nav-btn cr-nav-today" onclick="goThisWeek()">สัปดาห์นี้</button>
+      <button class="cr-nav-btn" onclick="changeWeek(1)">สัปดาห์ถัดไป &#8250;</button>
+      <span class="cr-week-label" id="cr-week-label"></span>
+    </div>
+
+    <div id="cr-schedule-wrap" class="cr-schedule-wrap">
+      <div class="cr-loading"><div class="cr-spinner"></div><span>กำลังโหลดข้อมูล...</span></div>
+    </div>
+
+    <!-- Legend -->
+    <div class="cr-legend">
+      <div class="cr-legend-item">
+        <div class="cr-legend-dot cr-legend-booked"></div>
+        <span><strong>จอง</strong> — ไม่ว่าง</span>
+      </div>
+      <div class="cr-legend-item">
+        <div class="cr-legend-dot cr-legend-free"></div>
+        <span><strong>ว่าง</strong> — พร้อมจอง</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INFO CARDS ===== -->
+<section class="cr-section cr-info-section" id="info">
+  <div class="cr-section-inner">
+    <div class="cr-section-header">
+      <h2 class="cr-section-title">
+        <span class="cr-section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </span>
+        ข้อมูลการใช้บริการ
+      </h2>
+    </div>
+    <div class="cr-info-grid">
+
+      <div class="cr-info-card">
+        <div class="cr-info-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-      </a>
+        <h3>เวลาเปิด-ปิด</h3>
+        <ul class="cr-info-list">
+          <li class="highlight">เปิดบริการ <strong>ทุกวัน</strong></li>
+          <li class="highlight">เวลา <strong>08:00 – 20:00 น.</strong></li>
+          <li>รวม <strong>12 ชั่วโมง</strong> ต่อวัน</li>
+          <li class="muted">กรุณาแจ้งยกเลิกล่วงหน้าอย่างน้อย 1 ชม.</li>
+        </ul>
+      </div>
 
-      <div class="header-clock" aria-live="polite">
-        <div class="clock-time" id="clock-time">00:00:00</div>
-        <div class="clock-date" id="clock-date"></div>
+      <div class="cr-info-card">
+        <div class="cr-info-card-icon cr-info-card-icon-accent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>ราคา &amp; การชำระเงิน</h3>
+        <ul class="cr-info-list">
+          <li class="highlight">ราคา <strong>100 บาท / ชั่วโมง</strong></li>
+          <li>ชำระผ่าน <strong>QR Code / โอนเงิน</strong></li>
+          <li>หรือ <strong>เงินสด</strong> ณ วันที่ใช้บริการ</li>
+          <li class="muted">แนบสลิปยืนยันการโอนทุกครั้ง</li>
+        </ul>
+      </div>
+
+      <div class="cr-info-card">
+        <div class="cr-info-card-icon cr-info-card-icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>วิธีจอง</h3>
+        <ul class="cr-info-list">
+          <li>ตรวจสอบช่องว่างจาก <strong>ตารางด้านบน</strong></li>
+          <li>ติดต่อจองผ่าน <strong>Line</strong></li>
+          <li class="highlight">แจ้ง วัน / เวลา / ชื่อ-นามสกุล</li>
+          <li class="muted">รับยืนยันการจองภายใน 15 นาที</li>
+        </ul>
       </div>
 
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ===== MAIN CONTENT ===== -->
-  <main class="main-content">
-
-    <!-- ===== SLIDESHOW HERO ===== -->
-    <section class="slideshow-section" aria-label="ภาพบรรยากาศสนาม">
-      <div class="slideshow-track" id="slideshow-track"></div>
-      <div class="slideshow-overlay" aria-hidden="true"></div>
-
-      <div class="slideshow-caption" aria-hidden="true">
-        <h2>สนามแบดมินตันหลังสวน</h2>
-        <p>Langsuan Badminton Hall &bull; 4 Courts &bull; Professional Standard</p>
+<!-- ===== FOOTER ===== -->
+<footer class="cr-footer">
+  <div class="cr-footer-inner">
+    <div class="cr-footer-brand">
+      <img src="./images/logo.png" alt="logo" class="cr-footer-logo" onerror="this.style.display='none'"/>
+      <div>
+        <div class="cr-footer-name">Common Room</div>
+        <div class="cr-footer-sub">ห้องประชุม &amp; ห้องอเนกประสงค์</div>
       </div>
-
-      <button class="slideshow-btn prev" onclick="window._slideshowPrev && window._slideshowPrev()" aria-label="ภาพก่อนหน้า">&#8249;</button>
-      <button class="slideshow-btn next" onclick="window._slideshowNext && window._slideshowNext()" aria-label="ภาพถัดไป">&#8250;</button>
-      <div class="slideshow-dots" id="slideshow-dots" role="tablist" aria-label="เลือกภาพ"></div>
-    </section>
-
-    <!-- ===== COMMON ROOM SCHEDULE ===== -->
-    <section class="section" id="common-room-section" aria-labelledby="cr-title" style="background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 100%)">
-      <div class="section-inner">
-        <h2 class="section-title" id="cr-title" style="color:#4f46e5">
-          <span class="section-icon" style="background:linear-gradient(135deg,#4f46e5,#7c3aed)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-          </span>
-          ตารางจอง Common Room
-        </h2>
-        <p class="section-subtitle">ตรวจสอบการจองห้อง Common Room — เปิด 08:00–20:00 ทุกวัน</p>
-
-        <!-- Date Navigation -->
-        <div class="date-nav" role="group" aria-label="เลือกวันที่">
-          <button class="date-nav-btn secondary" onclick="crChangeDate(-1)">&#8249; ก่อนหน้า</button>
-          <button class="date-nav-btn" onclick="crGoToday()" style="background:linear-gradient(135deg,#4f46e5,#7c3aed)">วันนี้</button>
-          <input type="date" id="cr-date-picker" class="date-input">
-          <button class="date-nav-btn secondary" onclick="crChangeDate(1)">ถัดไป &#8250;</button>
-          <span class="date-display" id="cr-date-display" aria-live="polite"></span>
-        </div>
-
-        <div id="cr-grid-container" role="region" aria-label="ตาราง Common Room" aria-live="polite" style="margin-top:1rem">
-          <div class="loading-state"><div class="spinner"></div><span>กำลังโหลด...</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== COURT AVAILABILITY ===== -->
-    <section class="section availability-section" id="availability" aria-labelledby="avail-title">
-      <div class="section-inner">
-
-        <h2 class="section-title" id="avail-title">
-          <span class="section-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </span>
-          ตารางความพร้อมคอร์ท
-        </h2>
-        <p class="section-subtitle">ตรวจสอบช่องว่างและสถานะการจองแบบเรียลไทม์</p>
-
-        <!-- Date Navigation -->
-        <div class="date-nav" role="group" aria-label="เลือกวันที่">
-          <button class="date-nav-btn secondary" onclick="changeDate(-1)" aria-label="วันก่อนหน้า">&#8249; ก่อนหน้า</button>
-          <button class="date-nav-btn" onclick="goToToday()">วันนี้</button>
-          <input type="date" id="date-picker" class="date-input" aria-label="เลือกวันที่" />
-          <button class="date-nav-btn secondary" onclick="changeDate(1)" aria-label="วันถัดไป">ถัดไป &#8250;</button>
-          <span class="date-display" id="date-display-text" aria-live="polite"></span>
-        </div>
-
-        <!-- Grid Container -->
-        <div id="grid-container" role="region" aria-label="ตารางคอร์ท" aria-live="polite">
-          <div class="loading-state">
-            <div class="spinner"></div>
-            <span>กำลังโหลดข้อมูลคอร์ท...</span>
-          </div>
-        </div>
-
-        <!-- Legend -->
-        <div class="legend" role="list" aria-label="คำอธิบายสัญลักษณ์">
-          <div class="legend-item" role="listitem">
-            <div class="legend-dot available" aria-hidden="true"></div>
-            <span><strong>ว่าง</strong> — พร้อมจอง</span>
-          </div>
-          <div class="legend-item" role="listitem">
-            <div class="legend-dot booked" aria-hidden="true"></div>
-            <span><strong>จอง</strong> — มีผู้จองแล้ว</span>
-          </div>
-          <div class="legend-item" role="listitem">
-            <div class="legend-dot kwon-light" aria-hidden="true"></div>
-            <span><strong>ก๊วนมือเบา</strong> — จ.–ศ. คอร์ท 2, 3 ตั้งแต่ 17:00 น.</span>
-          </div>
-          <div class="legend-item" role="listitem">
-            <div class="legend-dot kwon-heavy" aria-hidden="true"></div>
-            <span><strong>จอยก๊วน</strong> — จ.–ศ. ทุกคอร์ท ตั้งแต่ 19:00 น.</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== INFO CARDS ===== -->
-    <section class="section info-section" id="info" aria-labelledby="info-title">
-      <div class="section-inner">
-
-        <h2 class="section-title" id="info-title">
-          <span class="section-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </span>
-          ข้อมูลสนาม
-        </h2>
-        <p class="section-subtitle">ราคา บริการ และกฎระเบียบสนาม</p>
-
-        <div class="info-grid">
-
-          <!-- Card 1: เวลาเปิด-ปิด & ราคา -->
-          <div class="info-card">
-            <span class="info-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </span>
-            <h3 class="info-card-title">เวลาเปิด-ปิด &amp; ราคา</h3>
-            <ul>
-              <li class="li-primary">เปิดทุกวัน <strong>จันทร์ – เสาร์</strong></li>
-              <li class="li-primary">เวลา <strong>15:00 – 23:00 น.</strong></li>
-              <li>ราคา <span class="price-badge">180 บาท / ชั่วโมง</span></li>
-              <li class="li-primary">ชำระเต็มจำนวน<strong>ก่อนใช้บริการ</strong></li>
-              <li class="li-muted">แนบสลิปยืนยันการโอนทุกครั้ง</li>
-            </ul>
-          </div>
-
-          <!-- Card 2: บริการในสนาม -->
-          <div class="info-card">
-            <span class="info-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </span>
-            <h3 class="info-card-title">บริการในสนาม</h3>
-            <ul>
-              <li>เช่าไม้แบดมินตัน</li>
-              <li>เช่ารองเท้า <span class="info-tag">non-marking</span></li>
-              <li>ขึ้นเอ็นไม้แบดมินตัน <span class="highlight-service">บริการเด่น</span></li>
-              <li>น้ำดื่ม &amp; เครื่องดื่มต่างๆ</li>
-              <li class="li-warn">สวมรองเท้า <strong>non-marking เท่านั้น</strong></li>
-            </ul>
-          </div>
-
-          <!-- Card 3: กฎระเบียบ -->
-          <div class="info-card">
-            <span class="info-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-            </span>
-            <h3 class="info-card-title">กฎระเบียบสนาม</h3>
-            <ul>
-              <li class="li-primary">ชำระค่าบริการ<strong>ทันทีก่อนใช้สนาม</strong></li>
-              <li class="li-warn">ขอสงวนสิทธิ์<strong>ไม่คืนเงิน</strong>ทุกกรณี</li>
-              <li>แจ้งยกเลิกล่วงหน้าอย่างน้อย <strong>1 ชั่วโมง</strong></li>
-              <li class="li-muted">รักษาความสะอาดภายในสนาม</li>
-              <li class="li-primary">ออกจากสนาม<strong>ทันทีเมื่อหมดเวลา</strong></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== ก๊วน SCHEDULE ===== -->
-    <section class="section kwon-section" id="kwon" aria-labelledby="kwon-title">
-      <div class="section-inner">
-
-        <h2 class="section-title" id="kwon-title">
-          <span class="section-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </span>
-          ตารางก๊วน
-        </h2>
-        <p class="section-subtitle">กิจกรรมประจำและช่องว่างสำหรับผู้เล่นทุกระดับ</p>
-
-        <div class="kwon-cards">
-
-          <!-- ก๊วนมือเบา -->
-          <div class="kwon-card">
-            <span class="kwon-card-badge badge-light">ก๊วนมือเบา</span>
-            <h3 class="kwon-card-title">สำหรับผู้เล่นมือเบา</h3>
-            <div class="kwon-card-info">
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </span>
-                <span>17:30 – 23:00 น.</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                </span>
-                <span>จันทร์ – ศุกร์</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-                </span>
-                <span>คอร์ท 2 และ คอร์ท 3</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                </span>
-                <span>เหมาะสำหรับผู้เริ่มต้น – ระดับกลาง</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- ก๊วนมือหนัก -->
-          <div class="kwon-card">
-            <span class="kwon-card-badge badge-heavy">จอยก๊วนมือหนัก</span>
-            <h3 class="kwon-card-title">สำหรับผู้เล่นมือหนัก</h3>
-            <div class="kwon-card-info">
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </span>
-                <span>19:00 – 23:00 น.</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                </span>
-                <span>จันทร์ – ศุกร์</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-                </span>
-                <span>ทุกคอร์ท (1, 2, 3, 4)</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </span>
-                <span>เหมาะสำหรับผู้เล่นที่มีพื้นฐานที่ดี</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- วันเสาร์ -->
-          <div class="kwon-card">
-            <span class="kwon-card-badge badge-sat">วันเสาร์</span>
-            <h3 class="kwon-card-title">วันเสาร์เปิดอิสระ</h3>
-            <div class="kwon-card-info">
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </span>
-                <span>15:00 – 23:00 น.</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                </span>
-                <span>ทุกวันเสาร์</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-                </span>
-                <span>ทุกคอร์ท</span>
-              </div>
-              <div class="kwon-info-row">
-                <span class="kwon-info-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
-                <span>สามารถจองได้ตลอดเวลา</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-
-      <div class="footer-top">
-
-        <!-- QR Code box -->
-        <div class="footer-qr">
-          <div class="footer-qr-contact">
-            <img src="./images/qr_line.jpg" alt="QR Code Line สนามแบดมินตันหลังสวน" onerror="this.style.display='none';" />
-            <div>
-              <div class="footer-qr-label">ติดต่อจองผ่าน Line</div>
-              <div class="footer-qr-sub">สแกน QR เพื่อเพิ่มเพื่อน</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sale images box -->
-        <div class="footer-sale">
-          <div class="footer-sale-title">สินค้าและบริการในสนาม</div>
-          <div class="footer-sale-grid">
-            <div class="sale-img-card"><img src="./images/picforsale/sale1.jfif" alt="บริการในสนาม 1" onerror="this.closest('.sale-img-card').style.display='none'" /></div>
-            <div class="sale-img-card"><img src="./images/picforsale/sale2.jfif" alt="บริการในสนาม 2" onerror="this.closest('.sale-img-card').style.display='none'" /></div>
-            <div class="sale-img-card"><img src="./images/picforsale/sale3.jfif" alt="บริการในสนาม 3" onerror="this.closest('.sale-img-card').style.display='none'" /></div>
-            <div class="sale-img-card"><img src="./images/picforsale/sale4.jfif" alt="บริการในสนาม 4" onerror="this.closest('.sale-img-card').style.display='none'" /></div>
-            <div class="sale-img-card"><img src="./images/picforsale/sale5.jfif" alt="บริการในสนาม 5" onerror="this.closest('.sale-img-card').style.display='none'" /></div>
-          </div>
-        </div>
-
-        <div class="footer-info">
-          <div>
-            <div class="footer-name">สนามแบดมินตันหลังสวน</div>
-            <div class="footer-name-en">Langsuan Badminton Hall</div>
-          </div>
-          <div class="footer-details">
-            <div class="footer-detail-row">
-              <span class="footer-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </span>
-              <span>เปิดบริการ จันทร์ – เสาร์ &nbsp;|&nbsp; 15:00 – 23:00 น.</span>
-            </div>
-            <div class="footer-detail-row">
-              <span class="footer-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-              </span>
-              <span>4 คอร์ทมาตรฐาน &bull; พื้นยางคุณภาพ</span>
-            </div>
-            <div class="footer-detail-row">
-              <span class="footer-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-              </span>
-              <span>ราคา 180 บาท / ชั่วโมง</span>
-            </div>
-            <div class="footer-detail-row">
-              <span class="footer-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              </span>
-              <span>เช่าไม้ &bull; เช่ารองเท้า &bull; ขึ้นเอ็น &bull; เครื่องดื่ม</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 สนามแบดมินตันหลังสวน (Langsuan Badminton Hall). สงวนลิขสิทธิ์ทุกประการ.</p>
-      </div>
-
     </div>
-  </footer>
+    <div class="cr-footer-details">
+      <div class="cr-footer-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>เปิดทุกวัน 08:00 – 20:00 น.</span>
+      </div>
+      <div class="cr-footer-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <span>100 บาท / ชั่วโมง</span>
+      </div>
+    </div>
+    <div class="cr-footer-updated">
+      อัพเดทข้อมูลล่าสุด: <span id="cr-updated-at">—</span>
+    </div>
+  </div>
+  <div class="cr-footer-bottom">
+    <p>&copy; 2026 Common Room. สงวนลิขสิทธิ์ทุกประการ.</p>
+  </div>
+</footer>
 
-  <script src="./app.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
