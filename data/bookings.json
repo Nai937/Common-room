@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T17:18:04+07:00",
+  "generated_at": "2026-07-03T17:25:40+07:00",
   "bookings": [
     {
       "court": 1,
@@ -4976,7 +4976,7 @@
       "booker_name": "ครูไอซ์สอนเลข"
     },
     {
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "start_time": "16:00",
       "end_time": "18:00",
       "booker_name": "ครูไอซ์สอนเลข"
@@ -4986,12 +4986,6 @@
       "start_time": "17:00",
       "end_time": "19:00",
       "booker_name": "Baifern"
-    },
-    {
-      "date": "2026-07-05",
-      "start_time": "16:00",
-      "end_time": "17:00",
-      "booker_name": "นาย"
     },
     {
       "date": "2026-07-07",
