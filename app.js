@@ -103,6 +103,53 @@ async function loadCRData() {
   }
 }
 
+// ===== GALLERY =====
+async function loadCRGallery() {
+  try {
+    const res = await fetch('/api/public/common-room/gallery');
+    if (res.ok) {
+      const data = await res.json();
+      renderGallery(data.images || []);
+      return;
+    }
+  } catch (_) {}
+
+  try {
+    const res = await fetch(`./data/gallery.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    renderGallery(data.images || []);
+  } catch (_) {
+    renderGallery([]);
+  }
+}
+
+function renderGallery(images) {
+  const section = document.getElementById('gallery');
+  const wrap = document.getElementById('cr-gallery-wrap');
+  if (!wrap) return;
+
+  const urls = (images || []).map(i => i.url).filter(Boolean);
+  if (!urls.length) {
+    if (section) section.style.display = 'none';
+    return;
+  }
+  if (section) section.style.display = '';
+
+  const single = urls.length < 2;
+  // ทำสำเนาชุดรูปเพื่อให้ scroll วนต่อเนื่องแบบไม่มีรอยต่อ (ใช้กับ track ที่มี ≥2 รูป)
+  const track = single ? urls : urls.concat(urls);
+  const duration = Math.max(urls.length * 4, 14); // วินาที — ยิ่งรูปเยอะยิ่งเลื่อนนานขึ้น ความเร็วต่อรูปคงที่
+
+  const itemsHtml = track.map(url =>
+    `<div class="cr-gallery-item"><img src="${url}" alt="ภาพบรรยากาศห้อง Common Room" loading="lazy" onerror="this.parentElement.remove()"/></div>`
+  ).join('');
+
+  wrap.innerHTML = single
+    ? `<div class="cr-gallery-track cr-gallery-static"><div class="cr-gallery-track-inner">${itemsHtml}</div></div>`
+    : `<div class="cr-gallery-track" style="--cr-gallery-duration:${duration}s"><div class="cr-gallery-track-inner">${itemsHtml}</div></div>`;
+}
+
 function updateFooterTimestamp() {
   const el = document.getElementById('cr-updated-at');
   if (!el) return;
@@ -220,6 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
   updateClock();
   setInterval(updateClock, 1000);
   loadCRData();
+  loadCRGallery();
   // Refresh every 5 minutes
   setInterval(loadCRData, 5 * 60 * 1000);
+  setInterval(loadCRGallery, 5 * 60 * 1000);
 });
