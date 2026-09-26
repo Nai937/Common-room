@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:17:54+07:00",
+  "generated_at": "2026-09-26T15:13:28+07:00",
   "bookings": [
     {
       "court": 1,
@@ -5940,13 +5940,6 @@
     {
       "court": 1,
       "date": "2026-09-04",
-      "start_time": "20:00",
-      "end_time": "21:00",
-      "booker_name": "น้ำฝน"
-    },
-    {
-      "court": 1,
-      "date": "2026-09-04",
       "start_time": "22:00",
       "end_time": "23:00",
       "booker_name": "หยก"
@@ -6197,6 +6190,13 @@
       "booker_name": "ฺBenz"
     },
     {
+      "court": 4,
+      "date": "2026-09-12",
+      "start_time": "20:00",
+      "end_time": "21:00",
+      "booker_name": "3Oman"
+    },
+    {
       "court": 1,
       "date": "2026-09-14",
       "start_time": "17:00",
@@ -6268,10 +6268,17 @@
     },
     {
       "court": 1,
+      "date": "2026-09-16",
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "booker_name": "Benz"
+    },
+    {
+      "court": 1,
       "date": "2026-09-17",
       "start_time": "17:00",
-      "end_time": "19:00",
-      "booker_name": "Mama House Cafe'"
+      "end_time": "18:00",
+      "booker_name": "ไอติม"
     },
     {
       "court": 4,
@@ -6296,10 +6303,38 @@
     },
     {
       "court": 1,
+      "date": "2026-09-17",
+      "start_time": "20:00",
+      "end_time": "21:00",
+      "booker_name": "จูน"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-17",
+      "start_time": "21:00",
+      "end_time": "22:00",
+      "booker_name": "Dome"
+    },
+    {
+      "court": 4,
       "date": "2026-09-18",
       "start_time": "17:00",
       "end_time": "19:00",
       "booker_name": "โกเจี๊ยบ"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-18",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "จูน"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-18",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "booker_name": "น้ำฝน"
     },
     {
       "court": 1,
@@ -6309,11 +6344,18 @@
       "booker_name": "นกแก้ว"
     },
     {
-      "court": 1,
+      "court": 4,
       "date": "2026-09-19",
       "start_time": "17:00",
+      "end_time": "18:00",
+      "booker_name": "f.Angkana"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-19",
+      "start_time": "18:00",
       "end_time": "19:00",
-      "booker_name": "นกแก้ว"
+      "booker_name": "Dome"
     },
     {
       "court": 2,
@@ -6331,24 +6373,52 @@
     },
     {
       "court": 1,
+      "date": "2026-09-19",
+      "start_time": "19:00",
+      "end_time": "21:00",
+      "booker_name": "Pump"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-19",
+      "start_time": "22:00",
+      "end_time": "23:00",
+      "booker_name": "หยก"
+    },
+    {
+      "court": 1,
       "date": "2026-09-21",
       "start_time": "17:00",
       "end_time": "19:00",
       "booker_name": "โกเจี๊ยบ"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-09-21",
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "booker_name": "จุ๋ง"
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "T-O"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-21",
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "booker_name": "หยก"
     },
     {
       "court": 1,
       "date": "2026-09-22",
-      "start_time": "17:00",
+      "start_time": "16:00",
       "end_time": "18:00",
-      "booker_name": "นกแก้ว"
+      "booker_name": "Isuzu"
+    },
+    {
+      "court": 2,
+      "date": "2026-09-22",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "booker_name": "Isuzu"
     },
     {
       "court": 4,
@@ -6366,6 +6436,20 @@
     },
     {
       "court": 1,
+      "date": "2026-09-22",
+      "start_time": "20:00",
+      "end_time": "21:00",
+      "booker_name": "รถไฟเหาะ"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-22",
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "booker_name": "ปาม"
+    },
+    {
+      "court": 1,
       "date": "2026-09-23",
       "start_time": "17:00",
       "end_time": "19:00",
@@ -6383,14 +6467,21 @@
       "date": "2026-09-23",
       "start_time": "18:00",
       "end_time": "19:00",
-      "booker_name": "นกแก้ว"
+      "booker_name": "แนน"
     },
     {
       "court": 1,
       "date": "2026-09-23",
       "start_time": "19:00",
-      "end_time": "21:00",
-      "booker_name": "จุ๋ง"
+      "end_time": "20:00",
+      "booker_name": "Benz"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-23",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "booker_name": "จูน"
     },
     {
       "court": 1,
@@ -6400,11 +6491,11 @@
       "booker_name": "NAMPUNC_H"
     },
     {
-      "court": 1,
+      "court": 2,
       "date": "2026-09-24",
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "booker_name": "Mama House Cafe'"
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "booker_name": "นักเรียน"
     },
     {
       "court": 4,
@@ -6414,14 +6505,35 @@
       "booker_name": "นกแก้ว"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-09-24",
       "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
+      "end_time": "20:00",
+      "booker_name": "Mama House Cafe'"
     },
     {
       "court": 1,
+      "date": "2026-09-24",
+      "start_time": "21:00",
+      "end_time": "23:00",
+      "booker_name": "Panida"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-25",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "booker_name": "เอย"
+    },
+    {
+      "court": 1,
+      "date": "2026-09-25",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 4,
       "date": "2026-09-25",
       "start_time": "17:00",
       "end_time": "19:00",
@@ -6429,17 +6541,24 @@
     },
     {
       "court": 1,
-      "date": "2026-09-26",
-      "start_time": "15:00",
-      "end_time": "17:00",
-      "booker_name": "นกแก้ว"
+      "date": "2026-09-25",
+      "start_time": "20:00",
+      "end_time": "21:00",
+      "booker_name": "ปาม"
     },
     {
-      "court": 1,
+      "court": 4,
       "date": "2026-09-26",
-      "start_time": "17:00",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "booker_name": "f.Angkana"
+    },
+    {
+      "court": 2,
+      "date": "2026-09-26",
+      "start_time": "18:00",
       "end_time": "19:00",
-      "booker_name": "นกแก้ว"
+      "booker_name": "เจน"
     },
     {
       "court": 4,
@@ -6498,13 +6617,6 @@
       "booker_name": "นกแก้ว"
     },
     {
-      "court": 4,
-      "date": "2026-09-30",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
-    },
-    {
       "court": 1,
       "date": "2026-09-30",
       "start_time": "19:00",
@@ -6519,14 +6631,7 @@
       "booker_name": "Mama House Cafe'"
     },
     {
-      "court": 1,
-      "date": "2026-10-01",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
-    },
-    {
-      "court": 1,
+      "court": 4,
       "date": "2026-10-02",
       "start_time": "17:00",
       "end_time": "19:00",
@@ -6534,9 +6639,9 @@
     },
     {
       "court": 1,
-      "date": "2026-10-03",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "date": "2026-10-02",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "อ้อ(นกแก้ว)"
     },
     {
@@ -6582,13 +6687,6 @@
       "booker_name": "โกเจี๊ยบ"
     },
     {
-      "court": 4,
-      "date": "2026-10-07",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
-    },
-    {
       "court": 1,
       "date": "2026-10-07",
       "start_time": "19:00",
@@ -6605,22 +6703,22 @@
     {
       "court": 1,
       "date": "2026-10-08",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "T-O"
     },
     {
-      "court": 1,
+      "court": 4,
       "date": "2026-10-09",
       "start_time": "17:00",
       "end_time": "19:00",
       "booker_name": "โกเจี๊ยบ"
     },
     {
-      "court": 4,
-      "date": "2026-10-10",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "court": 1,
+      "date": "2026-10-09",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "นกแก้ว"
     },
     {
@@ -6629,6 +6727,13 @@
       "start_time": "18:00",
       "end_time": "20:00",
       "booker_name": "Mama House Cafe'"
+    },
+    {
+      "court": 4,
+      "date": "2026-10-10",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "booker_name": "T-O"
     },
     {
       "court": 1,
@@ -6666,13 +6771,6 @@
       "booker_name": "โกเจี๊ยบ"
     },
     {
-      "court": 4,
-      "date": "2026-10-14",
-      "start_time": "18:00",
-      "end_time": "19:00",
-      "booker_name": "นกแก้ว"
-    },
-    {
       "court": 1,
       "date": "2026-10-14",
       "start_time": "19:00",
@@ -6680,14 +6778,14 @@
       "booker_name": "จุ๋ง"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-10-15",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "Mama House Cafe'"
     },
     {
-      "court": 1,
+      "court": 4,
       "date": "2026-10-16",
       "start_time": "17:00",
       "end_time": "19:00",
@@ -6695,16 +6793,16 @@
     },
     {
       "court": 1,
-      "date": "2026-10-17",
-      "start_time": "15:00",
-      "end_time": "17:00",
+      "date": "2026-10-16",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "นกแก้ว"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-10-17",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "start_time": "15:00",
+      "end_time": "17:00",
       "booker_name": "นกแก้ว"
     },
     {
@@ -6750,6 +6848,13 @@
       "booker_name": "โกเจี๊ยบ"
     },
     {
+      "court": 4,
+      "date": "2026-10-21",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
       "court": 1,
       "date": "2026-10-21",
       "start_time": "19:00",
@@ -6757,14 +6862,21 @@
       "booker_name": "จุ๋ง"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-10-22",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "Mama House Cafe'"
     },
     {
-      "court": 1,
+      "court": 4,
+      "date": "2026-10-22",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 4,
       "date": "2026-10-23",
       "start_time": "17:00",
       "end_time": "19:00",
@@ -6772,16 +6884,16 @@
     },
     {
       "court": 1,
-      "date": "2026-10-24",
-      "start_time": "15:00",
-      "end_time": "17:00",
+      "date": "2026-10-23",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "นกแก้ว"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-10-24",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "start_time": "15:00",
+      "end_time": "17:00",
       "booker_name": "นกแก้ว"
     },
     {
@@ -6827,6 +6939,13 @@
       "booker_name": "โกเจี๊ยบ"
     },
     {
+      "court": 4,
+      "date": "2026-10-28",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
       "court": 1,
       "date": "2026-10-28",
       "start_time": "19:00",
@@ -6834,24 +6953,31 @@
       "booker_name": "จุ๋ง"
     },
     {
-      "court": 4,
+      "court": 1,
       "date": "2026-10-29",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "Mama House Cafe'"
     },
     {
-      "court": 1,
+      "court": 4,
+      "date": "2026-10-29",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 4,
       "date": "2026-10-30",
       "start_time": "17:00",
       "end_time": "19:00",
       "booker_name": "โกเจี๊ยบ"
     },
     {
-      "court": 4,
-      "date": "2026-10-31",
-      "start_time": "17:00",
-      "end_time": "19:00",
+      "court": 1,
+      "date": "2026-10-30",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "booker_name": "นกแก้ว"
     },
     {
@@ -6862,17 +6988,59 @@
       "booker_name": "Mama House Cafe'"
     },
     {
+      "court": 4,
+      "date": "2026-11-04",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 4,
+      "date": "2026-11-05",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
       "court": 1,
-      "date": "2026-11-07",
-      "start_time": "17:00",
-      "end_time": "18:00",
+      "date": "2026-11-06",
+      "start_time": "18:00",
+      "end_time": "19:00",
       "booker_name": "อ้อ(นกแก้ว)"
     },
     {
       "court": 1,
-      "date": "2026-11-07",
+      "date": "2026-11-06",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 4,
+      "date": "2026-11-11",
       "start_time": "18:00",
       "end_time": "19:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-11-13",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-11-20",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-11-28",
+      "start_time": "15:00",
+      "end_time": "17:00",
       "booker_name": "นกแก้ว"
     }
   ],
@@ -7268,6 +7436,12 @@
       "booker_name": "ครูไอซ์"
     },
     {
+      "date": "2026-09-09",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "ครูมินนี่"
+    },
+    {
       "date": "2026-09-10",
       "start_time": "16:00",
       "end_time": "20:00",
@@ -7278,6 +7452,12 @@
       "start_time": "10:00",
       "end_time": "13:00",
       "booker_name": "พัชรพร"
+    },
+    {
+      "date": "2026-09-14",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "ครูมินนี่"
     },
     {
       "date": "2026-09-15",
@@ -7298,16 +7478,178 @@
       "booker_name": "ครูไอซ์"
     },
     {
+      "date": "2026-09-22",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "ครูมินนี่"
+    },
+    {
       "date": "2026-09-23",
       "start_time": "08:00",
       "end_time": "10:00",
       "booker_name": "ครูไอซ์"
     },
     {
-      "date": "2026-09-29",
-      "start_time": "16:00",
-      "end_time": "18:00",
-      "booker_name": "ครูไอซ์"
+      "date": "2026-09-26",
+      "start_time": "10:00",
+      "end_time": "15:00",
+      "booker_name": "สัมมนาคุมอง"
+    },
+    {
+      "date": "2026-09-26",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "booker_name": "นักเรียน"
     }
-  ]
+  ],
+  "table_tennis": [
+    {
+      "table_no": 1,
+      "date": "2026-09-07",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "booker_name": "new"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-16",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "เจ๊กุล"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-17",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "booker_name": "สามีภรรยา"
+    },
+    {
+      "table_no": 2,
+      "date": "2026-09-17",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "เกม"
+    },
+    {
+      "table_no": 4,
+      "date": "2026-09-17",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "เปรี้ยว"
+    },
+    {
+      "table_no": 4,
+      "date": "2026-09-18",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "ตั้ม"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-19",
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "booker_name": "ตีก๊วน"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-19",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "พี่เอ๋"
+    },
+    {
+      "table_no": 2,
+      "date": "2026-09-19",
+      "start_time": "15:00",
+      "end_time": "18:00",
+      "booker_name": "ตีก๊วน"
+    },
+    {
+      "table_no": 2,
+      "date": "2026-09-19",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "พี่เอ๋"
+    },
+    {
+      "table_no": 3,
+      "date": "2026-09-19",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "booker_name": "พี่จิน"
+    },
+    {
+      "table_no": 3,
+      "date": "2026-09-19",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "จิรวัฒน์"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-21",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "booker_name": "ต๋อง"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-21",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "จูน"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-23",
+      "start_time": "18:00",
+      "end_time": "19:00",
+      "booker_name": "กฤต"
+    },
+    {
+      "table_no": 2,
+      "date": "2026-09-23",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "Wawa"
+    },
+    {
+      "table_no": 3,
+      "date": "2026-09-23",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "กฤต"
+    },
+    {
+      "table_no": 4,
+      "date": "2026-09-23",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "กฤต"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-24",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "โน่"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-09-25",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "booker_name": "อูน"
+    }
+  ],
+  "tt_price": {
+    "normal_price_per_hour": 60.0,
+    "promo_price_per_hour": 50.0,
+    "promo_start_date": "2026-09-07",
+    "promo_end_date": "2026-10-07",
+    "current_price_per_hour": 50.0,
+    "is_promo_active_today": true
+  }
 }
