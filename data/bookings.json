@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:08:15+07:00",
+  "generated_at": "2026-10-09T12:41:03+07:00",
   "bookings": [
     {
       "court": 1,
@@ -6911,6 +6911,13 @@
       "booker_name": "แอม"
     },
     {
+      "court": 1,
+      "date": "2026-10-09",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
       "court": 4,
       "date": "2026-10-09",
       "start_time": "17:00",
@@ -6951,6 +6958,13 @@
       "start_time": "19:00",
       "end_time": "20:00",
       "booker_name": "วิท"
+    },
+    {
+      "court": 1,
+      "date": "2026-10-10",
+      "start_time": "20:00",
+      "end_time": "22:00",
+      "booker_name": "แอม"
     },
     {
       "court": 1,
@@ -7021,6 +7035,13 @@
       "start_time": "15:00",
       "end_time": "17:00",
       "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-10-17",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "booker_name": "T-OMan"
     },
     {
       "court": 1,
@@ -7277,6 +7298,13 @@
     {
       "court": 1,
       "date": "2026-11-07",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-11-07",
       "start_time": "18:00",
       "end_time": "20:00",
       "booker_name": "Mama House Cafe'"
@@ -7339,6 +7367,13 @@
     },
     {
       "court": 1,
+      "date": "2026-11-14",
+      "start_time": "15:00",
+      "end_time": "17:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
       "date": "2026-11-16",
       "start_time": "18:00",
       "end_time": "20:00",
@@ -7384,6 +7419,13 @@
       "date": "2026-11-20",
       "start_time": "18:00",
       "end_time": "20:00",
+      "booker_name": "นกแก้ว"
+    },
+    {
+      "court": 1,
+      "date": "2026-11-21",
+      "start_time": "15:00",
+      "end_time": "17:00",
       "booker_name": "นกแก้ว"
     },
     {
@@ -7964,15 +8006,21 @@
     },
     {
       "date": "2026-10-09",
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "booker_name": "ครูมินนี่"
+    },
+    {
+      "date": "2026-10-09",
       "start_time": "09:00",
       "end_time": "10:00",
       "booker_name": "ครูมินนี่"
     },
     {
       "date": "2026-10-09",
-      "start_time": "11:00",
-      "end_time": "12:00",
-      "booker_name": "ครูมินนี่"
+      "start_time": "10:00",
+      "end_time": "13:00",
+      "booker_name": "DEAW"
     }
   ],
   "table_tennis": [
@@ -8199,14 +8247,28 @@
       "start_time": "17:00",
       "end_time": "18:00",
       "booker_name": "แย้ม"
+    },
+    {
+      "table_no": 1,
+      "date": "2026-10-08",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "booker_name": "เฟิส"
+    },
+    {
+      "table_no": 4,
+      "date": "2026-10-08",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "booker_name": "วัยรุ่น"
     }
   ],
   "tt_price": {
     "normal_price_per_hour": 60.0,
     "promo_price_per_hour": 50.0,
     "promo_start_date": "2026-09-07",
-    "promo_end_date": "2026-10-07",
-    "current_price_per_hour": 60.0,
-    "is_promo_active_today": false
+    "promo_end_date": "2026-12-31",
+    "current_price_per_hour": 50.0,
+    "is_promo_active_today": true
   }
 }
